@@ -43,6 +43,7 @@ def main(args, settings):
 
     # Do not continue if API is unavailable or token is not valid
     if not status == 200:
+        print(f"API checks failed with status {status}, bailing")
         sys.exit(1)
 
     # Use tar data stream if S3 bucket name is specified

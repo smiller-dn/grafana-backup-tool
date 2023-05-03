@@ -12,8 +12,8 @@ docstring = """
 {0} {1}
 
 Usage:
-    grafana-backup save [--config=<filename>] [--components=<>] [--no-archive]
-    grafana-backup restore [--config=<filename>] [--components=<>] <archive_file>
+    grafana-backup save [--force-version=version] [--config=<filename>] [--components=<>] [--no-archive]
+    grafana-backup restore [--force-version=version] [--config=<filename>] [--components=<>] <archive_file>
     grafana-backup delete [--config=<filename>] [--components=<>]
     grafana-backup tools [-h | --help] [--config=<filename>] [<optional-command>] [<optional-argument>]
     grafana-backup [--config=<filename>]

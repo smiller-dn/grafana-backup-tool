@@ -23,6 +23,8 @@ import sys
 def main(args, settings):
     arg_components = args.get('--components', False)
     arg_no_archive = args.get('--no-archive', False)
+    arg_force_version = args.get('--force-version', None)
+    settings.update({"FORCE_VERSION": arg_force_version})
 
     backup_functions = {'dashboards': save_dashboards,
                         'datasources': save_datasources,
